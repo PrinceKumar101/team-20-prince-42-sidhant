@@ -1,23 +1,24 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #3b3a34;
+  --text-h: #1e201b;
+  --bg: #f7f3ea;
+  --border: #d9d1c2;
+  --code-bg: #efe8d9;
+  --accent: #b65a2a;
+  --accent-bg: rgba(182, 90, 42, 0.12);
+  --accent-border: rgba(182, 90, 42, 0.45);
+  --social-bg: rgba(239, 232, 217, 0.7);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(51, 43, 28, 0.12) 0 10px 15px -3px,
+    rgba(51, 43, 28, 0.08) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Trebuchet MS', 'Lucida Sans Unicode', 'Segoe UI', sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -32,17 +33,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #c9c7bd;
+    --text-h: #f7f2e7;
+    --bg: #24201a;
+    --border: #4a4034;
+    --code-bg: #312a21;
+    --accent: #f1a16f;
+    --accent-bg: rgba(241, 161, 111, 0.16);
+    --accent-border: rgba(241, 161, 111, 0.5);
+    --social-bg: rgba(74, 64, 52, 0.5);
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.45) 0 10px 15px -3px,
+      rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -52,6 +54,10 @@
 
 body {
   margin: 0;
+  background:
+    radial-gradient(circle at top left, #fff3dc 0%, transparent 42%),
+    radial-gradient(circle at bottom right, #f2ddc5 0%, transparent 38%),
+    var(--bg);
 }
 
 #root {
